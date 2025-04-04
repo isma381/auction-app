@@ -5,7 +5,7 @@ const AuctionsList = () => {
   const [auctions, setAuctions] = useState([]);
 
   useEffect(() => {
-    axios.get('https://44.sudeka.com/auctions')
+    axios.get('https://auction-app-vert.vercel.app/auctions')
       .then(response => setAuctions(response.data))
       .catch(error => console.error('Error al obtener subastas:', error));
   }, []);
