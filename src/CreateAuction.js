@@ -8,7 +8,7 @@ const CreateAuction = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://auction-app-vert.vercel.app/auctions', { title, description, starting_price: startingPrice })
+    axios.post('https://backend-virid-iota-48.vercel.app/auctions', { title, description, starting_price: startingPrice })
       .then(response => {
         console.log('Subasta creada:', response.data);
         setTitle('');
